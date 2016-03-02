@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from scipy.integrate import odeint
 from numpy.linalg import norm
-get_ipython().magic(u'matplotlib inline')
+#get_ipython().magic(u'matplotlib inline')
 
 
 # # Sistema de Ecuaciones diferenciales
@@ -169,7 +169,7 @@ for i in xrange(N):
     
     # Grafica en 3D
     line,=ax3d.plot(r[:,0],r[:,1],r[:,2])
-    color=line.get_color()
+    color=line.#get_color()
     ax3d.plot(r[0:1,0],r[0:1,1],r[0:1,2],'o',color=color,markersize=5,markeredgecolor='none')
     
     # Grafica en 2D
@@ -192,4 +192,19 @@ ax3d.set_ylim(-ext,ext)
 ax3d.set_zlim(-ext,ext)
 ax2d.set_xlim(-ext,ext)
 ax2d.set_ylim(-ext,ext)
+
+
+# In[ ]:
+
+
+
+
+# In[ ]:
+
+
+
+
+# In[ ]:
+
+
 
