@@ -6,3 +6,5 @@ push:
 
 pull:
 	@echo "Pulling..."
+	@git reset --hard HEAD  
+	@git pull origin $(BRANCH)
